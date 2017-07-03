@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ruphone/public/css/reset.css" />
+    <script src="/ruphone/public/js/jquery-1.11.1.min.js"></script>
+    <script src="/ruphone/public/js/resetpage.js"></script>
+    <style>
+        .pageTit{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .pageTit>hr {
+            height: 1px;
+            width: 600px;
+            color: #ccc;
+            margin-top: 65px;
+        }
+
+        .pageTit>h2 {
+            box-sizing: content-box;
+            padding: 0px 32px;
+            display: inline-block;
+            width: auto;
+            font-size: 28px;
+            background-color: #fff;
+            color: rgb(255, 162, 0);
+            position: relative;
+            left: 50%;
+            top: -23px;
+            text-align: center;
+        }
+
+        .tit {
+            height: auto;
+            line-height: 32px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pageTit">
+        <hr>
+        <h2 class="tit">1-2Dt we fewfgwhjj djjf hd6v dd iejjf 1-2Dt we 6v dd iejjf</h2>
+    </div>
+</body>
+
+
+<script>
+    $(function () {
+        if ($(".tit").width() > 400) {
+            $(".tit").css("word-wrap", 'break-word');
+            $(".tit").css("width", "400px");
+            $(".tit").css("margin-left", "-232px");
+        } else {
+            var wid = $(".tit").width();
+            $(".tit").css("margin-left", -wid / 2 - 32);
+        }
+    })
+</script>
+
+</html>
